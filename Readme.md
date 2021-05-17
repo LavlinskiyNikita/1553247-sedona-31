@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [NIKita LAVlinskiy](https://up.htmlacademy.ru/htmlcss/31/user/1553247).
-* Наставник: [Егор Дьяченко].
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 

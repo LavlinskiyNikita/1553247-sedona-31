@@ -129,12 +129,12 @@ header {
   justify-content: center;
 }
 
-.weclome-main {
+.main__img__weclome-main {
   padding-top: 60px;
   margin-bottom: 11px;
 }
 
-.tothe-main {
+.main__img__weclome-main-tothe-main {
   margin-bottom: 53px;
 }
 
@@ -168,7 +168,7 @@ header {
   color: var(--basic-white);
 }
 
-.block-1 {
+.description-block-1 {
   background: var(--basic-Blue-gray-Crayola);
   text-align: center;
 }
@@ -182,7 +182,7 @@ header {
   height: 100%;
 }
 
-.block-1-title {
+.description-block-1-title {
   margin-top: 47px;
   margin-bottom: 25px;
   font-family: 'PTSans-Bold', sans-serif;
@@ -190,14 +190,14 @@ header {
   font-size: 21px;
 }
 
-.block-1-number {
+.description-block-1-number {
   margin-bottom: 23px;
   font-family: 'PTSans-Bold', sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
 
-.block-1-descr {
+.description-block-1-descr {
   font-family: 'PTSans', sans-serif;
   font-weight: 400;
   font-size: 14px;

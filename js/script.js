@@ -34,3 +34,5 @@ ymaps.ready(function () {
   myMap.geoObjects
       .add(myPlacemarkWithContent);
 });
+
+

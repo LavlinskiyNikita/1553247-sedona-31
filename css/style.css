@@ -15,10 +15,15 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 
-.input-prices,
+
 .popup__block-1-number-text::-webkit-outer-spin-button,
-.input-prices,
+
 .popup__block-1-number-text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-prices::-webkit-outer-spin-button,
+.input-prices::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -61,7 +66,7 @@ a {
 }
 
 .hidden {
-  display: none !important;
+  visibility: hidden;
 }
 
 /* index */
@@ -620,43 +625,67 @@ footer {
   background: transparent;
 }
 
-.range-controls {
+
+.wrapper-renge {
   position: relative;
-}
-
-.scale {
   margin-top: 20px;
-  width: 316px;
-  height: 2px;
-  background: #ffffff33;
+  margin-bottom: 33px;
 }
 
-.bar {
-  position: absolute;
-  bottom: 0;
-  width: 80%;
-  height: 2px;
-  background: #ffffff;
+.conteiner-range {
+	position: relative;
+	width: 100%;
+	height: 20px;
 }
 
-.range {
-  position: absolute;
-  top: 40%;
-  width: 6px;
-  height: 6px;
+input[type="range"]{
+	appearance: none;
+	width: 100%;
+	outline: none;
+	position: absolute;
+	top: 0; bottom: 0;
+	background: transparent;
+	pointer-events: none;
+}
+
+.slider-tarck {
+	width: 100%;
+  height: 2px;
   background: #ABABAB;
-  border-radius: 50%;
-  border: 9px solid var(--basic-white);
-  box-shadow: 0 4px #ffffff33;
+	position: absolute;
+	margin: auto;
+	top: 0; bottom: 0;
+	border-radius: 5px;
 }
 
-.range:hover {
-  transform: scale(1.2);
+input[type="range"]::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	height: 2px;
 }
 
-.range2 {
-  left: 80% ;
+input[type="range"]::-ms-track {
+	appearance: none;
+	height: 5px;
 }
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 1.3em;
+  width: 1.3em;
+  border: 7px solid white;
+  background: rgba(171, 171, 171, 1);
+  box-shadow: 0 4px #ABABAB;
+	border-radius: 50%;
+	cursor: pointer;
+	pointer-events: auto;
+	margin-top: -9px;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+	transform: scale(1.2);
+	box-shadow: 0 5px #cccccc;
+}
+
 
 .section-checkboxes {
   margin-top: 27px;

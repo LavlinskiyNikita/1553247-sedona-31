@@ -122,28 +122,29 @@
                 <div class="price-amount">
                   <label class="min-price">
                     от
-                    <input type="number" min="0" max="3000" name="min-prace" class="input-prices" value="0">
+                    <input type="number" min="0" max="3000" name="min-prace" id="range2"  class="input-prices" value="0">
                   </label>
                 </div>
                 <div class="vertecal-line"></div>
                 <div class="price-amount">
                   <label class="max-price">
                     до
-                    <input type="number" min="0" max="3000" name="max-prace" class="input-prices" value="3000">
+                    <input type="number" min="0" max="3000" name="max-prace" class="input-prices" id="range2" value="3000">
                   </label>
                 </div>
               </div>
-              <div class="range-controls flex">
-                <div class="scale">
-                  <div class="bar"></div>
+
+              <div class="wrapper-renge">
+                <div class="conteiner-range">
+                  <div class="slider-tarck"></div>
+                  <input type="range" min="0" max="3000" value="0" oninput="slideOne()" id="slider-1">
+                  <input type="range" min="0" max="3000" value="2000" oninput="slideTwo()"  id="slider-2">
                 </div>
-                <div class="range range1"></div>
-                <div class="range range2"></div>
               </div>
+
               <div class="button-show">
                 <button class="show-button" type="submit">показать</button>
               </div>
-
             </fieldset>
           </section>
         </div>
@@ -393,5 +394,4 @@
   </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>

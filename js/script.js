@@ -5,6 +5,8 @@ const ClosePopupBtn = document.querySelector(".map-section-btn");
 const Popup = document.querySelector("popup");
 
 
+
+
 // range
 
 window.onload = function(){

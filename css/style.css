@@ -61,6 +61,7 @@ a {
 }
 
 .wrapper {
+  box-shadow: 0 0 70px #3d3d3d5b;
   background: white;
   max-width: 1200px;
   margin: 0 auto;
@@ -399,6 +400,14 @@ a {
   height: 23px;
 }
 
+.popup_label:hover::after {
+  background: url('../img/icon/calendar2.svg');
+}
+
+.popup_label:focus::after {
+  background: url('../  img/icon/calendar3.svg');
+}
+
 .popup_label span {
   display: flex;
   align-items: center;
@@ -465,6 +474,29 @@ a {
   margin-left: 30px;
 }
 
+.popup__block-one-number__pluse {
+  fill: #A9A9A9;
+}
+.popup__block-one-number-munus {
+  fill: #A9A9A9;
+}
+
+.popup__block-one-number__pluse:hover {
+  fill: #000000;
+}
+.popup__block-one-number-munus:hover {
+  fill: #000000;
+}
+
+.popup__block-one-number__pluse:focus {
+  fill: var(--basic-Blue-gray-Crayola);
+}
+.popup__block-one-number-munus:focus {
+  fill: var(--basic-Blue-gray-Crayola);
+}
+
+
+
 .popup__block-one--text {
   display: flex;
   align-items: center;
@@ -496,6 +528,15 @@ a {
   height: 58px;
 }
 
+.popup__btn-search:hover {
+  background: #669EC0;
+}
+
+.popup__btn-search:focus {
+  background: #5496BD;
+  color: #ffffff4d;
+}
+
 .map {
   width: 100%;
   position: relative;
@@ -508,12 +549,6 @@ a {
 #map {
   width: 100%;
   height: 600px;
-}
-
-.filtr {
-  background: url("../img/background.png");
-  width: 100%;
-  height: 217px;
 }
 
 footer {
@@ -606,6 +641,12 @@ footer {
 }
 
 /* cotolog */
+
+.filtr {
+  background: url("../img/background.png");
+  width: 100%;
+  height: 217px;
+}
 
 .form-section-filters {
   display: block;
@@ -734,6 +775,12 @@ input[type="range"]:active::-webkit-slider-thumb {
 	transform: scale(1.2);
 	box-shadow: 0 5px #cccccc;
 }
+
+input[type="range"]:hover::-webkit-slider-thumb {
+	transform: scale(1.2);
+	box-shadow: 0 5px #cccccc;
+}
+
 
 
 
@@ -987,6 +1034,10 @@ legend {
   color: #000000;
 }
 
+.AnnUsdug-info:hover .AnnUsdug-info-title .AnnUsdug-info-title-link {
+  color: var(--basic-Blue-gray-Crayola);
+}
+
 .AnnUsdug-price {
   display: flex;
   font-family: 'PTSans', sans-serif;
@@ -1002,10 +1053,18 @@ legend {
   background: var(--basic-Blue-gray-Crayola);
 }
 
+.AnnUsdug-info-link:hover {
+  background: #669EC0;
+}
+
 .AnnUsdug-info-block {
   padding: 4px 18px;
   background: #766357;
   border: 0;
+}
+
+.AnnUsdug-info-block:hover {
+  background: #604E43;
 }
 
 .btn-link {

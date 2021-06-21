@@ -122,7 +122,7 @@
           <section class="section-checkboxes">
             <fieldset class="fieldset-filters">
               <legend>Стоимость в сутки, ₽:</legend>
-              <div class="prices flex">
+              <div class="prices">
                 <div class="price-amount">
                   <label class="min-price">
                     от
@@ -141,9 +141,12 @@
 
               <div class="wrapper-renge">
                 <div class="conteiner-range">
-                  <div class="slider-tarck"></div>
-                  <input type="range" min="0" max="3000" value="0" oninput="slideOne()" id="slider-1">
-                  <input type="range" min="0" max="3000" value="2000" oninput="slideTwo()" id="slider-2">
+                  <div class="slider-tarck">
+                    <div class="bar"></div>
+                  </div>
+
+                  <div class="range range1"></div>
+                  <div class="range range2"></div>
                 </div>
               </div>
 
@@ -157,9 +160,9 @@
       <section class="result">
         <div class="container-header">
           <div class="result-conent">
-            <div class="btn-text flex">
+            <div class="btn-text">
               <h3 class="result-title">Найдено: 3</h3>
-              <p class="result-descr flex">Сортировка:</p>
+              <p class="result-descr">Сортировка:</p>
               <p class="test-result-btn-text"><a href="#" class="test-result-btn-text-link-link-active">По цене</a></p>
               <p class="test-result-btn-text"><a href="#" class="test-result-btn-text-link-link">По типу</a></p>
               <p class="test-result-btn-text"><a href="#" class="test-result-btn-text-link-link">По рейтингу</a></p>
@@ -286,11 +289,6 @@
 
                 <div class="AnnUsdug-block-two">
                   <div class="star-block">
-                    <span class="star-reiting">
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                      </svg>
-                    </span>
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>

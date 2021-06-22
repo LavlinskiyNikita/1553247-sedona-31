@@ -70,10 +70,21 @@ a {
 
 }
 
-
-
 .hidden {
   visibility: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* index */
@@ -115,6 +126,7 @@ a {
 }
 
 .navivigation_list__item-link {
+  margin-top: 5px;
   color: var(--basic-black);
 }
 .navivigation_list__item-link:hover {
@@ -213,6 +225,7 @@ a {
 }
 
 .descr-block-title {
+  text-transform: uppercase;
   padding: 0 70px;
   margin-top: 47px;
   margin-bottom: 25px;
@@ -606,6 +619,21 @@ footer {
   background: #669EC0;
 }
 
+.footer-nav-list-icon-item-link {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background: var(--basic-Blue-gray-Crayola);
+}
+
+.footer-nav-list-icon-item-link svg {
+  fill: var(--basic-white);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .footer-nav-list-icon-item:focus,
 .footer-nav-list-icon-item-link:focus {
   background: #5496BD;
@@ -613,19 +641,12 @@ footer {
 }
 
 
-.footer-nav-list-icon-item-link {
-  background: var(--basic-Blue-gray-Crayola);
-  fill: var(--basic-white);
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .website {
   display: flex;
 }
 
 .website-text {
+  text-transform: uppercase;
   font-family: 'PTSans', sans-serif;
   font-size: 14px;
   margin-right: 15px;
@@ -675,6 +696,7 @@ footer {
   display: flex;
   width: 317px;
   height: 30px;
+  text-transform: uppercase;
   align-items: center;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
@@ -891,6 +913,7 @@ legend {
   cursor: pointer;
   color: var(--basic-white);
   font-size: 14px;
+  text-transform: uppercase;
   font-family: 'PTSans', sans-serif;
   font-weight: 400;
   width: 137px;
@@ -937,6 +960,7 @@ legend {
 .result-descr {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
   font-size: 14px;
   font-family: 'PTSans', sans-serif;
   margin-right: 40px;
@@ -967,6 +991,7 @@ legend {
 
 .test-result-btn-text {
   display: flex;
+  text-transform: uppercase;
   align-items: center;
   margin: 0 10px;
 }
@@ -1062,7 +1087,13 @@ legend {
   margin-right: 30px;
 }
 
+.AnnUsdug-info-prise {
+  font-family: 'PTSans', sans-serif;
+  text-transform: uppercase;
+}
+
 .AnnUsdug-info-link {
+  text-transform: uppercase;
   background: var(--basic-Blue-gray-Crayola);
 }
 
@@ -1071,6 +1102,7 @@ legend {
 }
 
 .AnnUsdug-info-block {
+  text-transform: uppercase;
   padding: 4px 18px;
   background: #766357;
   border: 0;
@@ -1100,7 +1132,7 @@ legend {
 }
 
 .reiting {
-  font-family: PT Sans;
+  font-family: 'PTSans-Bold', sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;

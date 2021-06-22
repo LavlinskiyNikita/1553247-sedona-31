@@ -48,7 +48,7 @@
             </a>
           </div>
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#" class="navivigation_list__item-link">карта шата</a>
+            <li class="header__nav-item"><a href="#" class="navivigation_list__item-link">карта штата</a>
             </li>
             <li class="header__nav-item"><a href="Catalog.html"
                 class="navivigation_list__item-link active_header-link">Гостиницы</a>
@@ -58,7 +58,7 @@
       </div>
     </header>
     <main>
-      <form class="form-filters" action="#">
+      <form class="form-filters" action="#" method="GET">
         <div class="form-filters-wrapper">
           <section class="section-checkboxes">
             <fieldset class="fieldset-filters">
@@ -105,7 +105,7 @@
                 <div class="pool_block checkbox">
                   <label class="label-text">
                     <input id="pool" type="checkbox" checked>
-                    <span class="sheckbox-castum"></span>
+                    <span class="sheckbox-castum" tabindex="1"></span>
                     <span class="span-text">Мотель</span>
                   </label>
                 </div>
@@ -169,16 +169,16 @@
             </div>
 
             <div class="result-switch">
-              <button class="result-switch--btn">
+              <a href="#" class="result-switch--btn">
                 <svg width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z"/>
                 </svg>
-              </button>
-              <button class="result-switch--btn result-switch--btn-active">
+              </a>
+              <a href="#" class="result-switch--btn result-switch--btn-active">
                 <svg width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11"/>
                 </svg>
-              </button>
+              </a>
             </div>
 
           </div>
@@ -312,23 +312,30 @@
       <div class="container-footer">
         <section class="section-footer-one">
           <p class="section-footer-one-text">#visitSEDONA</p>
+          <span class="visually-hidden">телефон</span>
           <a class="section-footer-one-text tel" href="tel:+78005558628">+7 800 555-86-28</a>
         </section>
         <section class="icon-footer-section">
           <nav class="footer-nav-icon">
             <ul class="footer-nav-list-icon">
-              <li class="footer-nav-list-icon-item"><a class="footer-nav-list-icon-item-link" href="#">
+              <li class="footer-nav-list-icon-item">
+                <span class="visually-hidden">твитер</span>
+                <a class="footer-nav-list-icon-item-link" href="#">
                   <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121 2.90501 10.1031C1.70501 9.24709 0.374007 8.53009 0.448007 6.33009C0.733007 6.65809 1.51501 6.86609 1.78801 6.80209C1.08501 6.56109 -0.181993 3.44209 0.894007 1.85009C2.71201 3.70409 4.62901 5.45609 8.04601 5.62309C8.25401 3.33009 9.18301 1.79309 10.95 1.14409Z" />
                   </svg>
-                </a></li>
-              <li class="footer-nav-list-icon-item"><a class="footer-nav-list-icon-item-link" href="#">
+                </a>
+              </li>
+              <li class="footer-nav-list-icon-item">
+                <span class="visually-hidden">фэйсбук</span>
+                <a class="footer-nav-list-icon-item-link" href="#">
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
                   </svg>
                 </a></li>
               <li class="footer-nav-list-icon-item">
+                <span class="visually-hidden">ютуб</span>
                 <a class="footer-nav-list-icon-item-link" href="#">
                   <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -341,7 +348,9 @@
         </section>
         <section class="website">
           <p class="website-text">website dy</p>
-          <a target="_blank" href="https://htmlacademy.ru/profile/id1553247"><svg width="115" height="34"
+          <span class="visually-hidden">html academy</span>
+          <a target="_blank" href="https://htmlacademy.ru/profile/id1553247">
+            <svg width="115" height="34"
               viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z" />

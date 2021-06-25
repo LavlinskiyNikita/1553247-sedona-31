@@ -1,9 +1,9 @@
 // popup
 
-const OpenClosePopupBtn = document.querySelector(".map-section-btn");
-const Popup = document.querySelector(".popup");
+const openClosePopupBtn = document.querySelector(".map-section-btn");
+const popup = document.querySelector(".popup");
 
-OpenClosePopupBtn.addEventListener("click", function() {
-  Popup.classList.toggle("hidden");
-  console.log(OpenClosePopupBtn);
+openClosePopupBtn.addEventListener("click", function() {
+  popup.classList.toggle("hidden");
 });
+

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>catalog</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/Normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             </li>
             <li class="header__nav-item"><a href="#" class="navivigation_list__item-link">карта штата</a>
             </li>
-            <li class="header__nav-item"><a href="Catalog.html" class="navivigation_list__item-link">Гостиницы</a>
+            <li class="header__nav-item"><a href="#" class="navivigation_list__item-link active_header-link ">Гостиницы</a>
             </li>
           </ul>
           <div class="header__logo-block">
@@ -55,16 +55,17 @@
       </div>
     </header>
     <main>
-      <form class="form-filters" action="#" method="GET">
+      <form class="form-filters" action="https://echo.htmlacademy.ru/" method="GET">
         <div class="form-filters-wrapper">
           <section class="section-checkboxes">
+            <h2 class="visually-hidden">секция</h2>
             <fieldset class="fieldset-filters">
               <legend>Инфраструктура:</legend>
               <div class="Infrastructure">
 
                 <div class="pool_block checkbox">
                   <label class="label-text">
-                    <input id="pool" type="checkbox" checked>
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="sheckbox-castum"></span>
                     <span class="span-text">бассейн</span>
                   </label>
@@ -72,7 +73,7 @@
 
                 <div class="pool_block checkbox">
                   <label class="label-text">
-                    <input id="pool" type="checkbox">
+                    <input class="visually-hidden" type="checkbox">
                     <span class="sheckbox-castum"></span>
                     <span class="span-text">Парковка</span>
                   </label>
@@ -80,7 +81,7 @@
 
                 <div class="pool_block checkbox">
                   <label class="label-text">
-                    <input id="pool" type="checkbox" disabled>
+                    <input class="visually-hidden" class="wi-fi" type="checkbox" disabled>
                     <span class="sheckbox-castum"></span>
                     <span class="span-text">Wi-Fi</span>
                   </label>
@@ -89,26 +90,27 @@
             </fieldset>
           </section>
           <section class="section-checkboxes">
+            <h2 class="visually-hidden">секция</h2>
             <fieldset class="fieldset-filters">
               <legend>Тип жилья:</legend>
               <div class="Infrastructure">
                 <div class="pool_block checkbox">
                   <label class="label-text">
-                    <input id="pool" type="checkbox" checked>
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="sheckbox-castum"></span>
                     <span class="span-text">Гостиница</span>
                   </label>
                 </div>
                 <div class="pool_block checkbox">
                   <label class="label-text">
-                    <input id="pool" type="checkbox" checked>
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="sheckbox-castum" tabindex="1"></span>
                     <span class="span-text">Мотель</span>
                   </label>
                 </div>
                 <div class="pool_block checkbox">
                   <label class="label-text">
-                    <input id="pool" type="checkbox" checked>
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="sheckbox-castum"></span>
                     <span class="span-text">Апартаменты</span>
                   </label>
@@ -117,20 +119,21 @@
             </fieldset>
           </section>
           <section class="section-checkboxes">
+            <h2 class="visually-hidden">секция</h2>
             <fieldset class="fieldset-filters">
               <legend>Стоимость в сутки, ₽:</legend>
               <div class="prices">
                 <div class="price-amount">
                   <label class="min-price">
                     от
-                    <input type="number" min="0" max="3000" name="min-prace" id="range2" class="input-prices" value="0">
+                    <input type="number" min="0" max="3000" name="min-prace" class="input-prices" value="0">
                   </label>
                 </div>
                 <div class="vertecal-line"></div>
                 <div class="price-amount">
                   <label class="max-price">
                     до
-                    <input type="number" min="0" max="3000" name="max-prace" class="input-prices" id="range2"
+                    <input type="number" min="0" max="3000" name="max-prace" class="input-prices"
                       value="3000">
                   </label>
                 </div>
@@ -155,6 +158,7 @@
         </div>
       </form>
       <section class="result">
+        <h2 class="visually-hidden">секция</h2>
         <div class="container-header">
           <div class="result-conent">
             <div class="btn-text">
@@ -182,13 +186,14 @@
         </div>
       </section>
       <section class="AnnUsdug">
+        <h2 class="visually-hidden">секция</h2>
         <nav class="AnnUsdug-nav">
           <ul class="AnnUsdug-navs-list">
             <li class="AnnUsdug-navs-list-item">
               <div class="AnnUsdug-conteiner">
                 <div class="AnnUsdug-block-one">
                   <div class="AnnUsdug-img-conent">
-                    <img src="img/content-image/Layer 21.png" width="135" height="90" alt="">
+                    <img src="img/content-image/Layer21.png" width="135" height="90" alt="место одыха">
                   </div>
                   <div class="AnnUsdug-info">
                     <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Amara Resort & Spa</a></h3>
@@ -197,10 +202,9 @@
                       <p class="AnnUsdug-info-prise">От 4000 ₽</p>
                     </div>
                     <a class="AnnUsdug-info-link btn-link" href="#">Подробнее</a>
-                    <button class="AnnUsdug-info-block btn-link">Забронировать</button>
+                    <a href="#" class="AnnUsdug-info-block">Забронировать</a>
                   </div>
                 </div>
-
                 <div class="AnnUsdug-block-two">
                   <div class="star-block">
                     <span class="star-reiting">
@@ -232,7 +236,7 @@
               <div class="AnnUsdug-conteiner">
                 <div class="AnnUsdug-block-one">
                   <div class="AnnUsdug-img-conent">
-                    <img src="img/content-image/Layer 89 copy.png" width="135" height="90" alt="">
+                    <img src="img/content-image/Layer89copy.png" width="135" height="90" alt="место одыха">
                   </div>
                   <div class="AnnUsdug-info">
                     <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Desert Quail Inn</a></h3>
@@ -241,7 +245,7 @@
                       <p class="AnnUsdug-info-prise">От 3000 ₽</p>
                     </div>
                     <a class="AnnUsdug-info-link btn-link" href="#">Подробнее</a>
-                    <button class="AnnUsdug-info-block btn-link">Забронировать</button>
+                    <a href="#" class="AnnUsdug-info-block">Забронировать</a>
                   </div>
                 </div>
 
@@ -271,7 +275,7 @@
               <div class="AnnUsdug-conteiner">
                 <div class="AnnUsdug-block-one">
                   <div class="AnnUsdug-img-conent">
-                    <img src="img/content-image/Rectangle.png" width="135" height="90" alt="">
+                    <img src="img/content-image/Rectangle.png" width="135" height="90" alt="место одыха">
                   </div>
                   <div class="AnnUsdug-info">
                     <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Villas at Poco Diablo</a></h3>
@@ -280,7 +284,7 @@
                       <p class="AnnUsdug-info-prise">От 2000 ₽</p>
                     </div>
                     <a class="AnnUsdug-info-link btn-link" href="#">Подробнее</a>
-                    <button class="AnnUsdug-info-block btn-link">Забронировать</button>
+                    <a href="#" class="AnnUsdug-info-block">Забронировать</a>
                   </div>
                 </div>
 
@@ -308,31 +312,26 @@
     <footer class="footeer">
       <div class="container-footer">
         <section class="section-footer-one">
+          <h2 class="visually-hidden">номер</h2>
           <p class="section-footer-one-text">#visitSEDONA</p>
-          <span class="visually-hidden">телефон</span>
           <a class="section-footer-one-text tel" href="tel:+78005558628">+7 800 555-86-28</a>
         </section>
         <section class="icon-footer-section">
+          <h2 class="visually-hidden">соц сети</h2>
           <nav class="footer-nav-icon">
             <ul class="footer-nav-list-icon">
-              <li class="footer-nav-list-icon-item">
-                <span class="visually-hidden">твитер</span>
-                <a class="footer-nav-list-icon-item-link" href="#">
+              <li class="footer-nav-list-icon-item"><a class="footer-nav-list-icon-item-link" href="#">
                   <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121 2.90501 10.1031C1.70501 9.24709 0.374007 8.53009 0.448007 6.33009C0.733007 6.65809 1.51501 6.86609 1.78801 6.80209C1.08501 6.56109 -0.181993 3.44209 0.894007 1.85009C2.71201 3.70409 4.62901 5.45609 8.04601 5.62309C8.25401 3.33009 9.18301 1.79309 10.95 1.14409Z" />
                   </svg>
-                </a>
-              </li>
-              <li class="footer-nav-list-icon-item">
-                <span class="visually-hidden">фэйсбук</span>
-                <a class="footer-nav-list-icon-item-link" href="#">
+                </a></li>
+              <li class="footer-nav-list-icon-item"><a class="footer-nav-list-icon-item-link" href="#">
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
                   </svg>
                 </a></li>
               <li class="footer-nav-list-icon-item">
-                <span class="visually-hidden">ютуб</span>
                 <a class="footer-nav-list-icon-item-link" href="#">
                   <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -344,10 +343,9 @@
           </nav>
         </section>
         <section class="website">
+          <h2 class="visually-hidden">сайт</h2>
           <p class="website-text">website dy</p>
-          <span class="visually-hidden">html academy</span>
-          <a target="_blank" href="https://htmlacademy.ru/profile/id1553247">
-            <svg width="115" height="34"
+          <a target="_blank" href="https://htmlacademy.ru/profile/id1553247"><svg width="115" height="34"
               viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z" />

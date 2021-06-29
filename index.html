@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/Normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="icon" href="32.ico">
 </head>
 
@@ -21,11 +21,11 @@
             </li>
             <li class="header__nav-item"><a href="#" class="navivigation_list__item-link">карта штата</a>
             </li>
-            <li class="header__nav-item"><a href="Catalog.html" class="navivigation_list__item-link">Гостиницы</a>
+            <li class="header__nav-item"><a href="catalog.html" class="navivigation_list__item-link">Гостиницы</a>
             </li>
           </ul>
           <div class="header__logo-block">
-            <a href="index.html">
+            <a href="#">
               <svg width="138" height="70" viewBox="0 0 138 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M138 0H0L59.51 65.68C64.73 71.441 73.27 71.441 78.49 65.68L138 0Z" fill="#81B3D3" />
                 <path d="M36.687 0.457L68.835 38.336L100.855 0.686L36.687 0.457Z" fill="#23A9E1" />
@@ -57,8 +57,9 @@
     <main class="main">
       <!-- text -->
       <section class="main__bg_section">
+        <h2 class="visually-hidden">секция</h2>
         <div class="main__bg_section-text">
-          <img src="img/main-text-bg.svg" alt="">
+          <img src="img/main-text-bg.svg" width="548" height="398" alt="фоновое изоброжения скал - гор">
         </div>
         <div class="triangles-block">
           <div class="triangles"></div>
@@ -69,7 +70,7 @@
       <section class="description">
         <div class="description-title-block">
           <div class="description-title-block-width">
-            <h1 class="description-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
+            <h1 class="description-title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!
             </h1>
             <p class="description-descr">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
@@ -81,7 +82,7 @@
             <p class="descr-block-descr">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="block-two">
-            <img src="img/hotel.png" width="800" height="256" alt="house">
+            <img src="img/hotel.jpg" width="800" height="256" alt="house">
           </div>
         </div>
       </section>
@@ -89,20 +90,21 @@
 <!--/text description-->
 <!-- подарки и фишки  -->
       <section class="enumer-section">
+        <h1 class="visually-hidden">перечисления</h1>
         <nav class="enumer-nav">
           <ul class="enumer-nav-list">
             <li class="enumer-nav-list-items">
-              <img src="img/icon/house.svg" alt="house">
+              <img src="img/icon/house.svg" width="72" height="72" alt="house">
               <p class="enumer-items-name">Жильё</p>
               <p class="enumer-items-descr">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="enumer-nav-list-items">
-              <img src="img/icon/food.svg" alt="food">
+              <img src="img/icon/food.svg" width="72" height="72" alt="food">
               <p class="enumer-items-name">Еда</p>
               <p class="enumer-items-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="enumer-nav-list-items">
-              <img src="img/icon/present.svg" alt="present">
+              <img src="img/icon/present.svg" width="72" height="72" alt="present">
               <p class="enumer-items-name">Сувениры</p>
               <p class="enumer-items-descr">Не только китайского, но и местного
                 производства!</p>
@@ -114,7 +116,7 @@
       <section class="enumeration-section-two">
         <div class="description-img-block-two">
           <div class="block-2-two">
-            <img src="img/canyon.png" width="800" height="256" alt="canyon">
+            <img src="img/canyon.jpg" width="800" height="256" alt="canyon">
           </div>
           <div class="descr-block-one-two">
             <h3 class="descr-block-title">Там есть <br> Мост дьявола </h3>
@@ -125,6 +127,7 @@
       </section>
 
       <section class="pros-section">
+        <h1 class="visually-hidden">перечисления</h1>
         <nav class="pros-nav">
           <ul class="pros-nav-list">
             <li class="pros-nav-list-items">
@@ -150,19 +153,19 @@
         <h2 class="map-section-title">Заинтересовались? </h2>
         <p class="map-section-descr">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
           гостиниц в седоне </p>
-        <button class="map-section-btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
-        <div class="popup hidden">
+        <button class="map-section-btn" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <div class="popup ">
           <div class="popup__body">
             <div class="popup-conteiner">
               <div class="popup__conent">
-                <form action="#" class="popup__form">
+                <form action="https://echo.htmlacademy.ru/" class="popup__form">
                   <div class="popup__bata">
                     <div class="date__popup">
-                      <label class="popup_label" for="">
+                      <label class="popup_label">
                         <span>Дата заезда:</span>
                         <input class="popup_label--input-text" type="text" value="24 апреля 2017">
                       </label>
-                      <label class="popup_label" for="">
+                      <label class="popup_label">
                         <span>Дата выезда:</span>
                         <input class="popup_label--input-text" type="text" value="4 июля 2017">
                       </label>
@@ -172,13 +175,13 @@
                     <div class="popup__block-one flex">
                       <span class="popup__block-one--text">Взрослые:</span>
                       <div class="popup__block-one-number block-one-number-one flex">
-                        <button class="popup__block-one-number-munus btn-nuber">
+                        <button type="button" class="popup__block-one-number-munus btn-nuber">
                           <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="3"/>
                           </svg>
                         </button>
-                        <input type="number" value="2" min="1" name="" id="" class="popup__block-1-number-text">
-                        <button class="popup__block-one-number__pluse btn-nuber">
+                        <input type="number" value="2" min="1" class="popup__block-1-number-text">
+                        <button type="button" class="popup__block-one-number__pluse btn-nuber">
                           <svg width="11" height="11" viewBox="0 0 11 11"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -192,32 +195,34 @@
                       <div class="flex-block-number">
                         <span class="popup__block-one--text">дети:</span>
                         <div class="block-one-number-two">
-                          <button class="popup__block-one-number-munus btn-nuber">
+                          <button type="button" class="popup__block-one-number-munus btn-nuber">
                             <svg width="12" height="3" viewBox="0 0 12 3"
                               xmlns="http://www.w3.org/2000/svg">
                               <rect width="12" height="3" />
                             </svg>
                           </button>
-                          <input type="number" value="0" min="0" name="" id="" class="popup__block-1-number-text">
-                          <button class="popup__block-one-number__pluse btn-nuber">
+                          <input type="number" value="0" min="0" class="popup__block-1-number-text">
+                          <button type="button" class="popup__block-one-number__pluse btn-nuber">
                             <svg width="11" height="11" viewBox="0 0 11 11"
                               xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
                             </svg>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button class="popup__btn-search" type="submit">Найти</button>
+                  <button class="popup__btn-search" name="button" type="submit">Найти</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
         <section class="map">
-          <img class="img-map" src="img/map.png">
-          <div id="map"></div>
+          <h2 class="visually-hidden ">карта</h2>
+          <img class="img-map" width="1200" height="593" src="img/map.png" alt="карта: "США  АРИЗОНА СЕДОНА>
+          <div id="map" class="map-block"></div>
         </section>
       </section>
     </main>
@@ -226,10 +231,12 @@
     <footer>
       <div class="container-footer">
         <section class="section-footer-one">
+          <h2 class="visually-hidden">номер</h2>
           <p class="section-footer-one-text">#visitSEDONA</p>
           <a class="section-footer-one-text tel" href="tel:+78005558628">+7 800 555-86-28</a>
         </section>
         <section class="icon-footer-section">
+          <h2 class="visually-hidden">соц сети</h2>
           <nav class="footer-nav-icon">
             <ul class="footer-nav-list-icon">
               <li class="footer-nav-list-icon-item"><a class="footer-nav-list-icon-item-link" href="#">
@@ -255,6 +262,7 @@
           </nav>
         </section>
         <section class="website">
+          <h2 class="visually-hidden">сайт</h2>
           <p class="website-text">website dy</p>
           <a target="_blank" href="https://htmlacademy.ru/profile/id1553247"><svg width="115" height="34"
               viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">

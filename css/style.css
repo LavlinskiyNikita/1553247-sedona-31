@@ -47,7 +47,7 @@ body {
 }
 
 @font-face {
-  font-family: "PTSans";
+  font-family: "PTSans",;
     src:url("../fonts/PTSans.woff2") format("woff2"),
         url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
@@ -100,7 +100,7 @@ a {
 .header {
   position: relative;
   background: var(--basic-white);
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   font-size: 14px;
   width: 100%;
   min-height: 55px;
@@ -124,29 +124,31 @@ a {
 }
 
 .header__nav-list {
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 
 .header__nav-item {
   text-transform: uppercase;
-  margin-right: 143px;
+  /* margin-right: 200px; */
 }
 
 .header__nav-item:nth-child(2) {
-  margin-right: 0;
-  margin-left: -5px;
+  margin-right: 200px;
+  /* margin-left: -5px; */
 }
 
 .header__nav-item:nth-child(3) {
-  margin-left: 415px;
+  /* margin-left: 415px; */
 }
 
 .header__nav-item:nth-child(4) {
-margin-left: 2px;
+  margin-left: 2px;
 }
 
 .header__nav-item:last-child {
@@ -221,14 +223,14 @@ margin-left: 2px;
   text-transform: uppercase;
   text-align: center;
   line-height: 27px;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   font-size: 21px;
   margin: 0;
   padding: 0 200px;
 }
 
 .description-descr {
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #333333;
@@ -269,7 +271,7 @@ margin-left: 2px;
   padding: 0 60px;
   margin-top: 47px;
   margin-bottom: 25px;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   font-weight: 800;
   font-size: 21px;
 }
@@ -282,14 +284,14 @@ margin-left: 2px;
 
 .descr-block-number {
   margin-bottom: 23px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
 }
 
 .descr-block-descr {
   line-height: 21px;
   text-transform: uppercase;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
 }
 
@@ -329,7 +331,7 @@ margin-left: 2px;
   margin-right: 0;
   margin-top: 23px;
   text-transform: uppercase;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
 }
 
 .enumer-items-descr {
@@ -340,7 +342,7 @@ margin-left: 2px;
   margin-right: 0;
   margin-top: 24px;
   line-height: 21px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
 }
 
@@ -372,12 +374,12 @@ margin-left: 2px;
   padding: 0 130px;
   margin-bottom: 23px;
   text-transform: uppercase;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   font-size: 21px;
 }
 
 .pros-nav-list-item-numders {
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
   margin-bottom: 28px;
 }
@@ -386,7 +388,7 @@ margin-left: 2px;
   text-transform: uppercase;
   line-height: 21px;
   padding: 0 71px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
 }
 
@@ -395,7 +397,7 @@ margin-left: 2px;
 }
 
 .map-section-title {
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 30px;
@@ -410,7 +412,7 @@ margin-left: 2px;
 .map-section-descr {
   text-transform: uppercase;
   padding: 0 100px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans',Arial, sans-serif;
   text-align: center;
   font-size: 14px;
   line-height: 21px;
@@ -425,7 +427,7 @@ margin-left: 2px;
   margin: 0 auto;
   border: none;
   color: var(--basic-white);
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   text-transform: uppercase;
   font-size: 21px;
   background: var(--basic-Flea-Reddish-brown);
@@ -454,7 +456,7 @@ margin-left: 2px;
   background: var(--basic-white);
   z-index: 11;
   font-size: 14px;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   animation: bounce 0.5s;
 }
 
@@ -481,23 +483,26 @@ margin-left: 2px;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.popup_label::after {
-  content: '';
+.popup_label--input-calendar {
+  fill: #A9A9A9;
+  cursor: pointer;
   display: block;
   position: absolute;
-  top: 50%; right: 9px;
+  top: 50%; right: 19px;
   transform: translateY(-50%);
-  background: url('../img/icon/calendar.svg');
+  background: none;
+  outline: none;
+  border: none;
   width: 21px;
   height: 23px;
 }
 
-.popup_label:hover::after {
-  background: url('../img/icon/calendar2.svg');
+.popup_label--input-calendar:hover {
+  fill: var(--basic-black);
 }
 
-.popup_label:focus::after {
-  background: url('../  img/icon/calendar3.svg');
+.popup_label--input-calendar:active{
+  fill: #81B3D2;
 }
 
 .popup_label span {
@@ -511,11 +516,12 @@ margin-left: 2px;
 }
 
 .popup_label--input-text {
+  cursor: pointer;
+  border: 2px solid #F2F2F2;
   text-transform: uppercase;
   outline: none;
   background: #F2F2F2;
   padding-left: 10px;
-  border: 0;
   height: 100%;
 }
 
@@ -572,21 +578,21 @@ margin-left: 2px;
 .popup__block-one-number__pluse {
   fill: #A9A9A9;
 }
-.popup__block-one-number-munus {
+.popup__block-one-number__munus {
   fill: #A9A9A9;
 }
 
 .popup__block-one-number__pluse:hover {
   fill: #000000;
 }
-.popup__block-one-number-munus:hover {
+.popup__block-one-number__munus:hover {
   fill: #000000;
 }
 
-.popup__block-one-number__pluse:focus {
+.popup__block-one-number__pluse:active {
   fill: var(--basic-Blue-gray-Crayola);
 }
-.popup__block-one-number-munus:focus {
+.popup__block-one-number__munus:active {
   fill: var(--basic-Blue-gray-Crayola);
 }
 
@@ -690,7 +696,7 @@ footer {
   color: black;
   font-size: 21px;
   text-transform: uppercase;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
 }
 
 .icon-footer-section {
@@ -773,7 +779,7 @@ footer {
   padding: 0;
   margin-top: 10px;
   text-transform: uppercase;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
   margin-right: 15px;
 }
@@ -840,6 +846,7 @@ footer {
 }
 
 .price-amount {
+  cursor: pointer;
   width: 50%;
 }
 
@@ -853,7 +860,7 @@ footer {
 .min-price {
   display: inline-block;
   vertical-align: auto;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
   width: 100%;
   height: 100%;
@@ -864,7 +871,7 @@ footer {
 .max-price {
   display: inline-block;
   vertical-align: auto;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   width: 100%;
@@ -875,6 +882,7 @@ footer {
 
 .min-price input,
 .max-price input {
+  cursor: text;
   outline: none;
   font-size: 14px;
   width: 40px;
@@ -975,7 +983,7 @@ input[type="range"]{
 legend {
   font-size: 16px;
   text-transform: uppercase;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
 }
 
 .checkbox-content {
@@ -1000,7 +1008,7 @@ legend {
   cursor: pointer;
   font-size: 14px;
   line-height: 21px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: 13px;
 }
@@ -1030,17 +1038,23 @@ legend {
   transition: opacity .6s ease-in-out;
 }
 
-.wi-fi:disabled {
-  border: 2px solid #6A6A6A;
-}
 
 .checkbox input:checked + .sheckbox-castum::before {
   opacity: 1;
 }
 
-.checkbox input:disabled {
-  border: 4px solid #6A6A6A;
+.checkbox input:disabled + .sheckbox-castum  {
+  border: 2px solid #6A6A6A;
 }
+
+
+.checkbox input:disabled:checked + .sheckbox-castum::before {
+  opacity: 1;
+  background: url("../img/icon/checkbox-dis.svg");
+  width: 24px;
+  height: 18px;
+}
+
 
 
 .button-show {
@@ -1053,7 +1067,7 @@ legend {
   color: var(--basic-white);
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-weight: 400;
   width: 137px;
   height: 36px;
@@ -1080,7 +1094,7 @@ legend {
 .result-title {
   text-transform: uppercase;
   font-size: 21px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   margin: 0;
   margin-top: -4px;
   margin-right: 46px;
@@ -1104,7 +1118,7 @@ legend {
   align-items: center;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   padding: 0;
   margin: 0;
   margin-right: 40px;
@@ -1113,13 +1127,13 @@ legend {
 
 .test-result-btn-text {
   font-size: 12px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
 }
 
 .btn-text {
   display: flex;
   margin-right: 32px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
 }
 
 .btn-reset-result:hover,
@@ -1218,7 +1232,7 @@ legend {
 
 .AnnUsdug-info-title {
   text-transform: uppercase;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   font-size: 21px;
   margin-bottom: 0;
   margin-left: 0;
@@ -1241,7 +1255,7 @@ legend {
 
 .AnnUsdug-price {
   display: flex;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
   margin-bottom: 22px;
 }
@@ -1260,7 +1274,7 @@ legend {
 }
 
 .AnnUsdug-info-prise {
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -1281,7 +1295,7 @@ legend {
 
 .AnnUsdug-info-block {
   color: var(--basic-white);
-  font-family: 'PTSans-bold', sans-serif;
+  font-family: 'PTSans-bold', Arial, sans-serif;
   text-transform: uppercase;
   padding: 3px 9px;
   background: #766357;
@@ -1300,7 +1314,7 @@ legend {
 .btn-link {
   cursor: pointer;
   font-size: 14px;
-  font-family: 'PTSans-Bold', sans-serif;
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   color: var(--basic-white);
 }
 
@@ -1317,7 +1331,7 @@ legend {
 }
 
 .reiting {
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -1337,18 +1351,18 @@ legend {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-2000px) translateX(-50%);
   }
 
   70% {
-    transform: translateY(-30px);
+    transform: translateY(-30px) translateX(-50%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateX(-50%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0) translateX(-50%);
   }
 }

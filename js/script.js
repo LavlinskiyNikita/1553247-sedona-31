@@ -8,13 +8,14 @@ openClosePopupBtn.addEventListener("click", function() {
 });
 
 
-const btnPlus = document.querySelector(".popup__block-one-number__pluse");
-const btnMinus = document.querySelector(".popup__block-one-number__munus");
-const numberText = document.querySelector(".popup__block-1-number-text");
+
+
+const btnPlus = document.querySelector(".btn-js-1-plus");
+const btnMinus = document.querySelector(".btn-js-1-minus");
+const numberText = document.querySelector(".text-js-1");
 
 let cont = 0;
-
-
+let cont1 = 0;
 
 btnPlus.addEventListener("click", function() {
   cont++;
@@ -22,9 +23,29 @@ btnPlus.addEventListener("click", function() {
 });
 
 btnMinus.addEventListener("click", function() {
-  cont--;
-  numberText.value = cont;
+
+  if (cont > 0) {
+    cont--;
+    numberText.value = cont;
+  };
 });
 
 
-// aa
+const btnPlus2 = document.querySelector(".btn-js-2-plus");
+const btnMinus2 = document.querySelector(".btn-js-2-minus");
+const numberText2 = document.querySelector(".text-js-2");
+
+
+btnPlus2.addEventListener("click", function() {
+  cont1++;
+  numberText2.value = cont1;
+});
+
+btnMinus2.addEventListener("click", function() {
+
+  if (cont1 > 0) {
+    cont1--;
+    numberText2.value = cont1;
+  };
+});
+

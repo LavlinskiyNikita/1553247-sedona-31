@@ -78,8 +78,6 @@ a {
   display: none;
 }
 
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -139,12 +137,12 @@ a {
 }
 
 .header__nav-item:nth-child(2) {
-  margin-right: 200px;
+  margin-right: 290px;
   /* margin-left: -5px; */
 }
 
 .header__nav-item:nth-child(3) {
-  /* margin-left: 415px; */
+  margin-left: -50px;
 }
 
 .header__nav-item:nth-child(4) {
@@ -1003,16 +1001,16 @@ legend {
 }
 
 .span-text {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  display: block;
   cursor: pointer;
+  user-select: none;
   font-size: 14px;
   line-height: 21px;
   font-family: 'PTSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: 13px;
 }
-
 
 .sheckbox-castum {
   display: inline-block;
@@ -1355,7 +1353,7 @@ legend {
   }
 
   70% {
-    transform: translateY(-30px) translateX(-50%);
+    transform: translateY(100px) translateX(-50%);
   }
 
   90% {

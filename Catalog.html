@@ -25,7 +25,9 @@
             </li>
           </ul>
           <div class="header__logo-block">
+            <h3 class="visually-hidden">лого</h3>
             <a href="index.html">
+              <span class="visually-hidden">logo</span>
               <svg width="138" height="70" viewBox="0 0 138 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M138 0H0L59.51 65.68C64.73 71.441 73.27 71.441 78.49 65.68L138 0Z" fill="#81B3D3" />
                 <path d="M36.687 0.457L68.835 38.336L100.855 0.686L36.687 0.457Z" fill="#23A9E1" />
@@ -65,24 +67,24 @@
 
                 <div class="pool_block checkbox">
                   <label for="pool" class="label-text">
-                    <input id="pool" class="visually-hidden" type="checkbox" checked>
-                    <span class="sheckbox-castum"></span>
+                    <input id="pool" class="visually-hidden" name="pool" type="checkbox" checked>
+                    <span tabindex="0" class="sheckbox-castum"></span>
                     <span class="span-text">бассейн</span>
                   </label>
                 </div>
 
                 <div class="pool_block checkbox">
                   <label for="parking" class="label-text">
-                    <input id="parking" class="visually-hidden" type="checkbox">
-                    <span class="sheckbox-castum"></span>
+                    <input id="parking" class="visually-hidden" name="parking" type="checkbox">
+                    <span tabindex="0" class="sheckbox-castum"></span>
                     <span class="span-text">Парковка</span>
                   </label>
                 </div>
 
                 <div class="pool_block checkbox">
                   <label for="Wi-Fi" class="label-text">
-                    <input id="Wi-Fi" class="visually-hidden" class="wi-fi" type="checkbox" disabled checked>
-                    <span class="sheckbox-castum"></span>
+                    <input id="Wi-Fi" class="visually-hidden" class="wi-fi" type="checkbox" name="wi-fi" disabled checked>
+                    <span tabindex="0" class="sheckbox-castum"></span>
                     <span class="span-text">Wi-Fi</span>
                   </label>
                 </div>
@@ -96,22 +98,22 @@
               <div class="Infrastructure">
                 <div class="pool_block checkbox">
                   <label for="hotel" class="label-text">
-                    <input id="hotel" class="visually-hidden" type="checkbox" checked>
-                    <span class="sheckbox-castum"></span>
+                    <input id="hotel" class="visually-hidden" name="hotel" type="checkbox" checked>
+                    <span tabindex="0" class="sheckbox-castum"></span>
                     <span class="span-text">Гостиница</span>
                   </label>
                 </div>
                 <div class="pool_block checkbox">
                   <label for="Motel" class="label-text">
-                    <input id="Motel" class="visually-hidden" type="checkbox" checked>
-                    <span class="sheckbox-castum" tabindex="1"></span>
+                    <input id="Motel" class="visually-hidden" name="Motel" type="checkbox" checked>
+                    <span tabindex="0" class="sheckbox-castum"></span>
                     <span class="span-text">Мотель</span>
                   </label>
                 </div>
                 <div class="pool_block checkbox">
                   <label for="Apartment" class="label-text">
-                    <input  id="Apartment" class="visually-hidden" type="checkbox" checked>
-                    <span  class="sheckbox-castum"></span>
+                    <input id="Apartment" class="visually-hidden" name="Apartment" type="checkbox" checked>
+                    <span tabindex="0" class="sheckbox-castum"></span>
                     <span class="span-text">Апартаменты</span>
                   </label>
                 </div>
@@ -133,8 +135,7 @@
                 <div class="price-amount">
                   <label class="max-price">
                     до
-                    <input type="number" min="0" max="3000" name="max-prace" class="input-prices"
-                      value="3000">
+                    <input type="number" min="0" max="3000" name="max-prace" class="input-prices" value="3000">
                   </label>
                 </div>
               </div>
@@ -170,14 +171,17 @@
             </div>
 
             <div class="result-switch">
+              <span class="visually-hidden">больше меньше </span>
               <a href="#" class="result-switch--btn">
-                <svg width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                <span class="visually-hidden">от большого к меньшему</span>
+                <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" />
                 </svg>
               </a>
               <a href="#" class="result-switch--btn result-switch--btn-active">
-                <svg width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11"/>
+                <span class="visually-hidden">от меньшего к большому</span>
+                <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" />
                 </svg>
               </a>
             </div>
@@ -196,7 +200,8 @@
                     <img src="img/content-image/Layer21.png" width="135" height="90" alt="место одыха">
                   </div>
                   <div class="AnnUsdug-info">
-                    <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Amara Resort & Spa</a></h3>
+                    <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Amara Resort & Spa</a>
+                    </h3>
                     <div class="AnnUsdug-price">
                       <p class="AnnUsdug-info-type">Гостиница</p>
                       <p class="AnnUsdug-info-prise">От 4000 ₽</p>
@@ -209,22 +214,30 @@
                   <div class="star-block">
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                   </div>
@@ -239,7 +252,8 @@
                     <img src="img/content-image/Layer89copy.png" width="135" height="90" alt="место одыха">
                   </div>
                   <div class="AnnUsdug-info">
-                    <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Desert Quail Inn</a></h3>
+                    <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Desert Quail Inn</a>
+                    </h3>
                     <div class="AnnUsdug-price">
                       <p class="AnnUsdug-info-type">Мотель</p>
                       <p class="AnnUsdug-info-prise">От 3000 ₽</p>
@@ -253,17 +267,23 @@
                   <div class="star-block">
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                   </div>
@@ -278,7 +298,8 @@
                     <img src="img/content-image/Rectangle.png" width="135" height="90" alt="место одыха">
                   </div>
                   <div class="AnnUsdug-info">
-                    <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Villas at Poco Diablo</a></h3>
+                    <h3 class="AnnUsdug-info-title"><a class="AnnUsdug-info-title-link" href="#">Villas at Poco
+                        Diablo</a></h3>
                     <div class="AnnUsdug-price">
                       <p class="AnnUsdug-info-type">Апартаменты</p>
                       <p class="AnnUsdug-info-prise">От 2000 ₽</p>
@@ -292,12 +313,16 @@
                   <div class="star-block">
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                     <span class="star-reiting">
                       <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        <path
+                          d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
+                          fill="#81B3D2" />
                       </svg>
                     </span>
                   </div>
@@ -345,7 +370,7 @@
         <section class="website">
           <h2 class="visually-hidden">сайт</h2>
           <p class="website-text">website dy</p>
-          <a target="_blank" href="https://htmlacademy.ru/profile/id1553247"><svg width="115" height="34"
+          <a target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"><svg width="115" height="34"
               viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z" />

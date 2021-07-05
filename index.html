@@ -25,7 +25,7 @@
             </li>
           </ul>
           <div class="header__logo-block">
-            <a href="#" >
+            <a href="#" aria-label="ссылка на главную страницу">
               <span class="visually-hidden">logo</span>
               <svg width="138" height="70" viewBox="0 0 138 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M138 0H0L59.51 65.68C64.73 71.441 73.27 71.441 78.49 65.68L138 0Z" fill="#81B3D3" />
@@ -155,7 +155,7 @@
         <h2 class="map-section-title">Заинтересовались? </h2>
         <p class="map-section-descr">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
           гостиниц в седоне </p>
-        <button class="map-section-btn" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <button class="map-section-btn" aria-label="открыть и закрыть модельное окно поиска гостинец" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
 
         <div class="popup">
           <div class="popup__body">
@@ -166,8 +166,8 @@
                     <div class="date__popup">
                       <label class="popup_label">
                         <span>Дата заезда:</span>
-                        <input class="popup_label--input-text" text" name="arrival" placeholder="24 апреля 2017">
-                        <button class="popup_label--input-calendar" name="calendar"  type="button">
+                        <input class="popup_label--input-text" aria-label="Дата заезда" text" name="arrival" placeholder="24 апреля 2017">
+                        <button class="popup_label--input-calendar" aria-label="выбрать дату заезда" name="calendar"  type="button">
                           <span class="visually-hidden">calendar</span>
                           <svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"/>
@@ -177,15 +177,14 @@
                       </label>
                       <label class="popup_label">
                         <span>Дата выезда:</span>
-                        <input class="popup_label--input-text" type="text" name="departure" placeholder="4 июля 2017">
-                        <button class="popup_label--input-calendar" name="calendar" type="button">
+                        <input class="popup_label--input-text" aria-label="Дата выезда" type="text" name="departure" placeholder="4 июля 2017">
+                        <button class="popup_label--input-calendar" aria-label="выбрать дату выезда" name="calendar" type="button">
                           <span class="visually-hidden">calendar</span>
                           <svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"/>
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
                           </svg>
                         </button>
-
                       </label>
                     </div>
                   </div>
@@ -193,14 +192,14 @@
                     <div class="popup__block-one flex">
                       <span class="popup__block-one--text">Взрослые:</span>
                       <div class="popup__block-one-number block-one-number-one flex">
-                        <button type="button" name="minus" class="popup__block-one-number__munus btn-js-1-minus btn-nuber">
+                        <button aria-label="убавка взрослых" type="button" name="minus" class="popup__block-one-number__munus btn-js-1-minus btn-nuber">
                           <span class="visually-hidden">minus</span>
                           <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="3"/>
                           </svg>
                         </button>
-                        <input type="number" name="number" value="2" min="1" class="popup__block-1-number-text text-js-1">
-                        <button type="button" name="plus" class="popup__block-one-number__pluse btn-js-1-plus btn-nuber">
+                        <input type="number" name="number" aria-label="количество взрослых" value="2" min="1" class="popup__block-1-number-text text-js-1">
+                        <button type="button" aria-label="приьавка взрослых" name="plus" class="popup__block-one-number__pluse btn-js-1-plus btn-nuber">
                           <span class="visually-hidden">plus</span>
                           <svg width="11" height="11" viewBox="0 0 11 11"
                             xmlns="http://www.w3.org/2000/svg">
@@ -215,14 +214,14 @@
                       <div class="flex-block-number">
                         <span class="popup__block-one--text">дети:</span>
                         <div class="block-one-number-two">
-                          <button type="button" name="minus1" class="popup__block-one-number__munus btn-js-2-minus btn-nuber">
+                          <button type="button" name="minus1" aria-label="убавка дитей" class="popup__block-one-number__munus btn-js-2-minus btn-nuber">
                             <span class="visually-hidden">minus1</span>
                             <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
                               <rect width="12" height="3"/>
                             </svg>
                           </button>
-                          <input type="number" name="number1" value="0" min="0" class="popup__block-1-number-text text-js-2">
-                          <button type="button" name="plus1" class="popup__block-one-number__pluse btn-js-2-plus btn-nuber">
+                          <input type="number" name="number1" aria-label="количество дитей"  value="0" min="0" class="popup__block-1-number-text text-js-2">
+                          <button type="button" name="plus1" aria-label="прибавка дитей"  class="popup__block-one-number__pluse btn-js-2-plus btn-nuber">
                             <span class="visually-hidden">plus1</span>
                             <svg width="11" height="11" viewBox="0 0 11 11"
                               xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +233,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="popup__btn-search" type="submit">Найти</button>
+                  <button class="popup__btn-search" aria-label="искать Гостиницы по выброным котегорием "  type="submit">Найти</button>
                 </form>
               </div>
             </div>
@@ -253,26 +252,28 @@
       <div class="container-footer">
         <section class="section-footer-one">
           <h2 class="visually-hidden">.номер</h2>
-          <p class="section-footer-one-text">#visitSEDONA</p>
-          <a class="section-footer-one-text tel" href="tel:+78005558628">+7 800 555-86-28</a>
+          <p class="section-footer-one-text" >#visitSEDONA</p>
+          <a class="section-footer-one-text tel" aria-label="номер телефона" href="tel:+78005558628">+7 800 555-86-28</a>
         </section>
         <section class="icon-footer-section">
           <h2 class="visually-hidden">соц сети</h2>
           <nav class="footer-nav-icon">
             <ul class="footer-nav-list-icon">
-              <li class="footer-nav-list-icon-item"><a class="footer-nav-list-icon-item-link" href="#">
+              <li class="footer-nav-list-icon-item">
+                <a class="footer-nav-list-icon-item-link" href="#" aria-label="твиттер">
                   <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121 2.90501 10.1031C1.70501 9.24709 0.374007 8.53009 0.448007 6.33009C0.733007 6.65809 1.51501 6.86609 1.78801 6.80209C1.08501 6.56109 -0.181993 3.44209 0.894007 1.85009C2.71201 3.70409 4.62901 5.45609 8.04601 5.62309C8.25401 3.33009 9.18301 1.79309 10.95 1.14409Z" />
                   </svg>
                 </a></li>
-              <li class="footer-nav-list-icon-item"><a class="footer-nav-list-icon-item-link" href="#">
+              <li class="footer-nav-list-icon-item">
+                <a class="footer-nav-list-icon-item-link" href="#" aria-label="фэйсбук">
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
                   </svg>
                 </a></li>
               <li class="footer-nav-list-icon-item">
-                <a class="footer-nav-list-icon-item-link" href="#">
+                <a class="footer-nav-list-icon-item-link" href="#" aria-label="ютуб">
                   <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" />
@@ -285,7 +286,7 @@
         <section class="website">
           <h2 class="visually-hidden">сайт</h2>
           <p class="website-text">website dy</p>
-          <a target="_blank" href="https://htmlacademy.ru/profile/id1553247"><svg width="115" height="34"
+          <a target="_blank" aria-label="штмл академи" href="https://htmlacademy.ru/profile/id1553247"><svg width="115" height="34"
               viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z" />

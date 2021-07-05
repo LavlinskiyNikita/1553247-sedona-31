@@ -64,20 +64,29 @@
             <fieldset class="fieldset-filters">
               <legend>Инфраструктура:</legend>
               <div class="Infrastructure">
-                <ul class="filters-list">
-                  <li class="filters-item">
-                    <input type="checkbox" class="filter-input-checkbox visually-hidden" id="pool" aria-label="боссуйн">
-                    <label for="pool" aria-label="боссуйн">бассейн</label>
-                  </li>
-                  <li class="filters-item">
-                    <input type="checkbox" class="filter-input-checkbox visually-hidden" id="parking" aria-label="боссуйн">
-                    <label for="parking" aria-label="боссуйн">Парковка</label>
-                  </li>
-                  <li class="filters-item">
-                    <input type="checkbox" disabled checked class="filter-input-checkbox visually-hidden" id="Wi-Fi" aria-label="боссуйн">
-                    <label for="Wi-Fi" aria-label="Wi-Fi">Wi-Fi</label>
-                  </li>
-                </ul>
+                <div class="parking_block checkbox">
+                  <label for="pool" class="label-text" aria-label="wi-fi">
+                    <input id="pool" aria-label="wi-fi" class="visually-hidden" class="wi-fi" type="checkbox" name="wi-fi">
+                    <span class="sheckbox-castum"></span>
+                    <span class="span-text">БАССЕЙН</span>
+                  </label>
+                </div>
+
+                  <div class="parking_block checkbox">
+                    <label for="parking" class="label-text" aria-label="wi-fi">
+                      <input id="parking" aria-label="wi-fi" class="visually-hidden" class="wi-fi" type="checkbox" name="wi-fi">
+                      <span class="sheckbox-castum"></span>
+                      <span class="span-text">ПАРКОВКА</span>
+                    </label>
+                  </div>
+
+                <div class="pool_block checkbox">
+                  <label for="Wi-Fi" class="label-text" aria-label="wi-fi">
+                    <input id="Wi-Fi" aria-label="wi-fi" class="visually-hidden" class="wi-fi" type="checkbox" name="wi-fi" disabled checked>
+                    <span tabindex="0" class="sheckbox-castum"></span>
+                    <span class="span-text">Wi-Fi</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
           </section>
@@ -86,20 +95,27 @@
             <fieldset class="fieldset-filters">
               <legend>Тип жилья:</legend>
               <div class="Infrastructure">
-                <ul class="filters-list">
-                  <li class="filters-item">
-                    <input type="checkbox" class="filter-input-checkbox visually-hidden" id="hotel" aria-label="боссуйн">
-                    <label for="hotel" aria-label="боссуйн">Гостиница</label>
-                  </li>
-                  <li class="filters-item">
-                    <input type="checkbox" class="filter-input-checkbox visually-hidden" id="Motel" aria-label="боссуйн">
-                    <label for="Motel" aria-label="боссуйн">Мотель</label>
-                  </li>
-                  <li class="filters-item">
-                    <input type="checkbox" class="filter-input-checkbox visually-hidden" id="Apartment" aria-label="боссуйн">
-                    <label for="Apartment" aria-label="Wi-Fi">Апартаменты</label>
-                  </li>
-                </ul>
+                <div class="pool_block checkbox">
+                  <label for="hotel" class="label-text" aria-label="Гостиница">
+                    <input id="hotel" class="visually-hidden" name="hotel" type="checkbox" checked>
+                    <span tabindex="0" aria-label="Гостиница" class="sheckbox-castum"></span>
+                    <span class="span-text">Гостиница</span>
+                  </label>
+                </div>
+                <div class="pool_block checkbox">
+                  <label for="Motel" class="label-text"  aria-label="мотель">
+                    <input id="Motel" class="visually-hidden" name="Motel" type="checkbox" checked>
+                    <span tabindex="0" aria-label="мотель" class="sheckbox-castum"></span>
+                    <span class="span-text">Мотель</span>
+                  </label>
+                </div>
+                <div class="pool_block checkbox">
+                  <label for="Apartment" class="label-text" aria-label="Апартаменты">
+                    <input   id="Apartment" class="visually-hidden" name="Apartment" type="checkbox" checked>
+                    <span tabindex="0" aria-label="Апартаменты" class="sheckbox-castum"></span>
+                    <span class="span-text">Апартаменты</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
           </section>

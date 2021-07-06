@@ -47,7 +47,7 @@ body {
 }
 
 @font-face {
-  font-family: "PTSans",;
+  font-family: "PTSans";
     src:url("../fonts/PTSans.woff2") format("woff2"),
         url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
@@ -137,7 +137,7 @@ a {
 }
 
 .header__nav-item:nth-child(2) {
-  margin-right: 290px;
+  margin-right: 343px;
   /* margin-left: -5px; */
 }
 
@@ -829,7 +829,7 @@ footer {
 }
 
 .Infrastructure {
-  margin-top: 28px;
+  margin-top: 14px;
 }
 
 .prices  {
@@ -1051,7 +1051,6 @@ legend {
   transition: opacity .6s ease-in-out;
 }
 
-
 .checkbox input:checked + .sheckbox-castum::before {
   opacity: 1;
 }
@@ -1064,15 +1063,12 @@ legend {
   border: 2px solid #6A6A6A;
 }
 
-
 .checkbox input:disabled:checked + .sheckbox-castum::before {
   opacity: 1;
   background: url("../img/icon/checkbox-dis.svg");
   width: 24px;
   height: 18px;
 }
-
-
 
 .button-show {
   width: 100%;
@@ -1297,7 +1293,7 @@ legend {
 
 .AnnUsdug-info-link {
   text-transform: uppercase;
-  padding: 4px 18px;
+  padding: 4px 17px;
   background: var(--basic-Blue-gray-Crayola);
 }
 
@@ -1312,9 +1308,10 @@ legend {
 
 .AnnUsdug-info-block {
   color: var(--basic-white);
+  font-size: 14px;
   font-family: 'PTSans-bold', Arial, sans-serif;
   text-transform: uppercase;
-  padding: 3px 9px;
+  padding: 4px 17px;
   background: #766357;
   border: 0;
 }
@@ -1329,6 +1326,7 @@ legend {
 }
 
 .btn-link {
+  margin-right: 2px;
   cursor: pointer;
   font-size: 14px;
   font-family: 'PTSans-Bold', Arial, sans-serif;

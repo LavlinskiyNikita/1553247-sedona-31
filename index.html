@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="32.ico">
 </head>
 
@@ -164,9 +164,9 @@
                 <form action="https://echo.htmlacademy.ru/" class="popup__form">
                   <div class="popup__bata">
                     <div class="date__popup">
-                      <label class="popup_label">
+                      <div class="popup_label">
                         <span>Дата заезда:</span>
-                        <input class="popup_label--input-text" aria-label="Дата заезда" text" name="arrival" placeholder="24 апреля 2017">
+                        <input class="popup_label--input-text" aria-label="Дата заезда" type="text" name="arrival" value="24 апреля 2017">
                         <button class="popup_label--input-calendar" aria-label="выбрать дату заезда" name="calendar"  type="button">
                           <span class="visually-hidden">calendar</span>
                           <svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
@@ -174,10 +174,10 @@
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
                           </svg>
                         </button>
-                      </label>
-                      <label class="popup_label">
+                      </div>
+                      <div class="popup_label">
                         <span>Дата выезда:</span>
-                        <input class="popup_label--input-text" aria-label="Дата выезда" type="text" name="departure" placeholder="4 июля 2017">
+                        <input class="popup_label--input-text" aria-label="Дата выезда" type="text" name="departure" value="4 июля 2017">
                         <button class="popup_label--input-calendar" aria-label="выбрать дату выезда" name="calendar" type="button">
                           <span class="visually-hidden">calendar</span>
                           <svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +185,7 @@
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
                           </svg>
                         </button>
-                      </label>
+                      </div>
                     </div>
                   </div>
                   <div class="adults__popup flex">
@@ -241,7 +241,7 @@
         </div>
         <section class="map">
           <h2 class="visually-hidden ">карта</h2>
-          <img class="img-map" width="1200" height="593" src="img/map.png" alt="карта: "США  АРИЗОНА СЕДОНА>
+          <img class="img-map" width="1200" height="593" src="img/map.png" alt="карта: США  АРИЗОНА СЕДОНА">
           <div id="map" class="map-block"></div>
         </section>
       </section>
@@ -286,7 +286,7 @@
         <section class="website">
           <h2 class="visually-hidden">сайт</h2>
           <p class="website-text">website dy</p>
-          <a target="_blank" aria-label="штмл академи" href="https://htmlacademy.ru/profile/id1553247"><svg width="115" height="34"
+          <a target="_blank" aria-label="штмл академи" href="https://htmlacademy.ru/intensive/htmlcss"><svg width="115" height="34"
               viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z" />
@@ -324,8 +324,8 @@
       </div>
     </footer>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script src="js/map.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/map.min.js"></script>
   <script src="js/sript.min.js"></script>
 </body>
 

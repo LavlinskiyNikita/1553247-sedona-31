@@ -48,6 +48,9 @@ btnMinus2.addEventListener("click", function() {
   };
 });
 
+//error
+
+
 const formPopup = document.querySelector(".popup__form");
 const popupError = document.querySelector(".popup_Error");
 const arrival = document.querySelector("[name=arrival]");

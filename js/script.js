@@ -1,4 +1,4 @@
-popup
+
 
 const openClosePopupBtn = document.querySelector(".map-section-btn");
 const popup = document.querySelector(".popup");
@@ -48,3 +48,17 @@ btnMinus2.addEventListener("click", function() {
   };
 });
 
+const formPopup = document.querySelector(".popup__form");
+const popupError = document.querySelector(".popup_Error");
+const arrival = document.querySelector("[name=arrival]");
+const departure = document.querySelector("[name=departure]");
+
+formPopup.addEventListener("submit", function (evt){
+  if(!arrival.value || !departure.value){
+    evt.preventDefault();
+    popup.classList.remove("popupError");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("popupError");
+    console.log("нужно ввести дату выезда");
+  }
+});

@@ -2,7 +2,7 @@
 
 * Студент: [NIKita LAVlinskiy](https://up.htmlacademy.ru/htmlcss/31/user/1553247).
 * Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
-
+* github Pages(https://bab-gam.github.io/1553247-sedona-31/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

@@ -5,11 +5,6 @@
   --basic-Flea-Reddish-brown: #766357;
 }
 
-/*
-html {
-  overflow-x: hidden;
-} */
-
 body {
   overflow-x: hidden;
   background: #F2F2F2;
@@ -1322,6 +1317,11 @@ legend {
 .AnnUsdug-info-block:active {
   background: #503E33;
   color: rgba(255, 255, 255, 0.300);
+}
+
+.container-result {
+  width: 1055px;
+  margin: 0 auto;
 }
 
 .btn-link {
